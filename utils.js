@@ -1,5 +1,5 @@
 const bugs = require('./bugs.json')
-const { mountpath } = require('./server')
+// const { mountpath } = require('./server')
 
 function generateWrongAnswers(correctMothId) {
   const randomIds = []
@@ -25,7 +25,6 @@ function exampleData() {
   return viewData
 }
 
-// generateWrongAnswers(1)
 
 module.exports = {
   generateWrongAnswers,
