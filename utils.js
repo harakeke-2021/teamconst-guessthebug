@@ -1,5 +1,5 @@
 const bugs = require('./bugs.json')
-const { mountpath } = require('./server')
+// const { mountpath } = require('./server')
 
 function generateWrongAnswers(correctMothId) {
   const randomIds = []
@@ -17,3 +17,11 @@ function generateWrongAnswers(correctMothId) {
 }
 
 generateWrongAnswers(1)
+
+function correctAnswer () {
+  const choice = req.body.id
+  if (bugs.moths.id === Number(choice)){
+    return true
+  }
+  return false
+}
