@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A game where the user has to guess the bug",
   "main": "index.js",
+  "dev": "nodemon index --ignore data.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
