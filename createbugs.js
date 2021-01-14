@@ -22,7 +22,7 @@ bug3.name = 'Comet moth'
 bug3.image = './public/images/moth3.jpeg'
 bug3.hint = 'native to the rain forests of Madagascar'
 bug3.id = 3
-bug3.fact = 'The male has a wingspan of 20 cm (7.9 inches) and a tail span of 15 cm (5.9 inches), making it one of the world's largest silk moths.'
+bug3.fact = `The male has a wingspan of 20 cm (7.9 inches) and a tail span of 15 cm (5.9 inches), making it one of the world's largest silk moths.`
 bugs.bugs.push(bug3)
 
 const bug4 = {}
@@ -50,51 +50,51 @@ bug6.fact = 'It is a migratory species, flying to parts of eastern and southern 
 bugs.bugs.push(bug6)
 
 const bug7 = {}
-bug1.name = `Granny's cloak moth`
-bug1.image = './public/images/moth7.jpeg'
-bug1.hint = 'Caterpillars have long, flat bodies that have brown coats spotted with spots that are black or black and white.'
-bug1.id = 7
-bug1.fact = 'Australia native, typically found in the north eastern areas, but some have been randomly seen in New Zealand and Norfolk Island.'
+bug7.name = `Granny's cloak moth`
+bug7.image = './public/images/moth7.jpeg'
+bug7.hint = 'Caterpillars have long, flat bodies that have brown coats spotted with spots that are black or black and white.'
+bug7.id = 7
+bug7.fact = 'Australia native, typically found in the north eastern areas, but some have been randomly seen in New Zealand and Norfolk Island.'
 bugs.bugs.push(bug7)
 
 const bug8 = {}
-bug1.name = 'Rosy maple moth'
-bug1.image = './public/images/moth8.jpeg'
-bug1.hint = 'The emerging caterpillars mainly feed on the leaves of their host maple trees'
-bug1.id = 8
-bug1.fact = 'Popular choice in the pet trade.'
+bug8.name = 'Rosy maple moth'
+bug8.image = './public/images/moth8.jpeg'
+bug8.hint = 'The emerging caterpillars mainly feed on the leaves of their host maple trees'
+bug8.id = 8
+bug8.fact = 'Popular choice in the pet trade.'
 bugs.bugs.push(bug8)
 
 const bug9 = {}
-bug1.name = 'Io moth'
-bug1.image = './public/images/moth9.jpeg'
-bug1.hint = ' Both male and female have one big black to bluish eyeo-spot with some white in the center'
-bug1.id = 9
-bug1.fact = 'After mating, the females lay eggs then wait to die.'
+bug9.name = 'Io moth'
+bug9.image = './public/images/moth9.jpeg'
+bug9.hint = ' Both male and female have one big black to bluish eyeo-spot with some white in the center'
+bug9.id = 9
+bug9.fact = 'After mating, the females lay eggs then wait to die.'
 bugs.bugs.push(bug9)
 
 const bug10 = {}
-bug1.name = 'Scarlet-bodied wasp moth'
-bug1.image = './public/images/moth10.jpeg'
-bug1.hint = 'Caterpillars are yellow-bodied and covered with a thick coat of white spiky fur.'
-bug1.id = 10
-bug1.fact = '"Your chance of surviving greatly increases if you look like something really dangerous,” said someone.'
+bug10.name = 'Scarlet-bodied wasp moth'
+bug10.image = './public/images/moth10.jpeg'
+bug10.hint = 'Caterpillars are yellow-bodied and covered with a thick coat of white spiky fur.'
+bug10.id = 10
+bug10.fact = '"Your chance of surviving greatly increases if you look like something really dangerous,” said someone.'
 bugs.bugs.push(bug10)
 
 const bug11 = {}
-bug1.name = 'Tussar Silk Moth'
-bug1.image = './public/images/moth11.jpeg'
-bug1.hint = 'It is actually one of a number of tasar silkworms, species that produce silk'
-bug1.id = 11
-bug1.fact = 'This species is native to India.'
+bug11.name = 'Tussar Silk Moth'
+bug11.image = './public/images/moth11.jpeg'
+bug11.hint = 'It is actually one of a number of tasar silkworms, species that produce silk'
+bug11.id = 11
+bug11.fact = 'This species is native to India.'
 bugs.bugs.push(bug11)
 
 const bug12 = {}
-bug1.name = `Death's-head hawkmoth`
-bug1.image = './public/images/moth12.jpeg'
-bug1.hint = 'It is a striking insect, but is seldom seen because it flies late in the night'
-bug1.id = 12
-bug1.fact = 'it is a powerful flier, having sometimes been found on ships far from land.'
+bug12.name = `Death's-head hawkmoth`
+bug12.image = './public/images/moth12.jpeg'
+bug12.hint = 'It is a striking insect, but is seldom seen because it flies late in the night'
+bug12.id = 12
+bug12.fact = 'it is a powerful flier, having sometimes been found on ships far from land.'
 bugs.bugs.push(bug12)
 
- console.log(JSON.stringify(bugs))
+ console.log(JSON.stringify(bugs, null, 2))
