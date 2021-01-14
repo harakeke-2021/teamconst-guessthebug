@@ -1,3 +1,88 @@
 {
-  
+  "moths": [
+    {
+      "name": "Green pergesa hawkmoth",
+      "image": "./public/images/moth1.jpeg",
+      "hint": "Larva are greenish with a dark dorsal line",
+      "id": 1,
+      "fact": "It is found in Sri Lanka, India, Nepal, Myanmar, Thailand, eastern and southern China, Taiwan, Japan (the Ryukyu Archipelago), Peninsular Malaysia, Indonesia (Sumatra, Java, Sulawesi) and the Philippines."
+    },
+    {
+      "name": "Luna Moth",
+      "image": "./public/images/moth2.jpeg",
+      "hint": "Several other North American giant silk moths were also given species names after Roman or Greek mythology.",
+      "id": 2,
+      "fact": "Carl Linnaeus described the species in 1758 in the tenth edition of Systema Naturae, and renamed it Phalaena luna, later Actias luna, with luna derived from Luna, the Roman moon goddess."
+    },
+    {
+      "name": "Comet moth",
+      "image": "./public/images/moth3.jpeg",
+      "hint": "native to the rain forests of Madagascar",
+      "id": 3,
+      "fact": "The male has a wingspan of 20 cm (7.9 inches) and a tail span of 15 cm (5.9 inches), making it one of the world's largest silk moths."
+    },
+    {
+      "name": "Lime hawk-moth",
+      "image": "./public/images/moth4.jpeg",
+      "hint": "It is found throughout the Palearctic region and the Near East, and has also been identified in eastern Canada",
+      "id": 4,
+      "fact": "The wingspan is 70–80 millimetres (2.8–3.1 in)"
+    },
+    {
+      "name": "Twin-spotted sphinx moth",
+      "image": "./public/images/moth5.jpeg",
+      "hint": "Adult moths are nocturnal, but seem to prefer the earlier part hours of the night",
+      "id": 5,
+      "fact": "Smerinthus jamaicensis, the twin-spotted sphinx, is a moth of the family Sphingidae"
+    },
+    {
+      "name": "Army green moth",
+      "image": "./public/images/moth6.jpeg",
+      "hint": "The caterpillars feed mainly on oleander (Nerium oleander) leaves, a highly toxic plant, to which the caterpillars are immune",
+      "id": 6,
+      "fact": "It is a migratory species, flying to parts of eastern and southern Europe during the summer, particularly Turkey"
+    },
+    {
+      "name": "Granny's cloak moth",
+      "image": "./public/images/moth7.jpeg",
+      "hint": "Caterpillars have long, flat bodies that have brown coats spotted with spots that are black or black and white.",
+      "id": 7,
+      "fact": "Australia native, typically found in the north eastern areas, but some have been randomly seen in New Zealand and Norfolk Island."
+    },
+    {
+      "name": "Rosy maple moth",
+      "image": "./public/images/moth8.jpeg",
+      "hint": "The emerging caterpillars mainly feed on the leaves of their host maple trees",
+      "id": 8,
+      "fact": "Popular choice in the pet trade."
+    },
+    {
+      "name": "Io moth",
+      "image": "./public/images/moth9.jpeg",
+      "hint": " Both male and female have one big black to bluish eyeo-spot with some white in the center",
+      "id": 9,
+      "fact": "After mating, the females lay eggs then wait to die."
+    },
+    {
+      "name": "Scarlet-bodied wasp moth",
+      "image": "./public/images/moth10.jpeg",
+      "hint": "Caterpillars are yellow-bodied and covered with a thick coat of white spiky fur.",
+      "id": 10,
+      "fact": "\"Your chance of surviving greatly increases if you look like something really dangerous,” said someone."
+    },
+    {
+      "name": "Tussar Silk Moth",
+      "image": "./public/images/moth11.jpeg",
+      "hint": "It is actually one of a number of tasar silkworms, species that produce silk",
+      "id": 11,
+      "fact": "This species is native to India."
+    },
+    {
+      "name": "Death's-head hawkmoth",
+      "image": "./public/images/moth12.jpeg",
+      "hint": "It is a striking insect, but is seldom seen because it flies late in the night",
+      "id": 12,
+      "fact": "it is a powerful flier, having sometimes been found on ships far from land."
+    }
+  ]
 }
