@@ -16,4 +16,18 @@ function generateWrongAnswers(correctMothId) {
   return mothArray
 }
 
-generateWrongAnswers(1)
+function exampleData() {
+  const correctMoth = bugs.moths[0]
+  const incorrectAnswer = generateWrongAnswers(1)
+  const viewData = {}
+  viewData.correctMoth = correctMoth
+  viewData.incorectMoths = incorrectAnswer
+  return viewData
+}
+
+// generateWrongAnswers(1)
+
+module.exports = {
+  generateWrongAnswers,
+  exampleData
+}
