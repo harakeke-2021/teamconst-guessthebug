@@ -13,8 +13,7 @@ function generateWrongAnswers(correctMothId) {
     }
   }
   const mothArray = bugs.moths.filter((moth) => randomIds.includes(moth.id))
-  console.log(randomIds)
-  const wrongAnswers = mothArray.map((moth) => moth.name)
-  console.log(wrongAnswers)
-  return wrongAnswers
+  return mothArray
 }
+
+generateWrongAnswers(1)
