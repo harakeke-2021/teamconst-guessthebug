@@ -13,6 +13,7 @@ router.use(express.urlencoded({
 
 
 router.get('/', (req, res) => {
+  const viewData = utils.exampleData 
   res.render('home')
 })
 
