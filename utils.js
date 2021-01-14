@@ -1,16 +1,19 @@
 const bugs = require('./bugs.json')
 const { mountpath } = require('./server')
 
-function generateWrongAnswers() {
+function generateWrongAnswers(correctMothId) {
   const randomIds = []
   const numberOfBugs = 12
+
   while (randomIds.length < 3) {
-    let random = Math.floor(Math.random() * numberOfBugs)
-    if (!randomIds.includes(random)) {
-      randomIds.push(random)
+
+    const randomId = Math.floor(Math.random() * numberOfBugs) + 1
+    if (!(randomIds.includes(randomId) || randomId === correctMothId)) {
+      randomIds.push(randomId)
     }
   }
   const mothArray = bugs.moths.filter((moth) => randomIds.includes(moth.id))
-  const wrongAnswers = mothArray.map((moth) => moth.name)
-  return wrongAnswers
+  return mothArray
 }
+
+generateWrongAnswers(1)
