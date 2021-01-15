@@ -41,7 +41,6 @@ function getData() {
   return viewData
 }
 
-
 module.exports = {
   generateWrongAnswers,
   exampleData,
