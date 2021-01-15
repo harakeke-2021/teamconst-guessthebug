@@ -13,7 +13,17 @@ router.use(express.urlencoded({
 }))
 
 router.post('/', (req, res) => {
-  console.log(req.body)
+  const theMoth = req.body
+  const correctAnswer = theMoth.correctAnswer
+  if (correctAnswer === theMoth.moths){
+    //const strMoth = JSON.stringify(theMoth)
+    console.log('correct moth')
+    res.render('correct', theMoth)
+  } else {
+    //const strMoth = JSON.stringify(theMoth)
+    console.log('incorrect moth')
+    res.render('wrong', theMoth)
+  } 
 })
 
 
@@ -24,8 +34,9 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-const theMoth = req.body
-console.log(theMoth)
+//const theMoth = req.body
+//console.log('test')
+
 
 })
 
