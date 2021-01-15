@@ -15,22 +15,24 @@ router.use(express.urlencoded({
 router.post('/', (req, res) => {
   const theMoth = req.body
   console.log(theMoth)
+  const mothData = utils.getMoth(parseInt(theMoth.correctAnswer))
+  console.log(mothData)
   const correctAnswer = theMoth.correctAnswer
   if (correctAnswer === theMoth.userSelection){
     //const strMoth = JSON.stringify(theMoth)
     console.log('correct moth')
-    res.render('correct', theMoth)
+    res.render('correct', mothData)
   } else {
     //const strMoth = JSON.stringify(theMoth)
     console.log('incorrect moth')
-    res.render('wrong', theMoth)
+    res.render('wrong', mothData)
   } 
 })
 
 
 router.get('/', (req, res) => {
   const viewData = utils.getData()
-  console.log(viewData)
+  // console.log(viewData)
   res.render('home', viewData)
 })
 
