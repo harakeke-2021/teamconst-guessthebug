@@ -1,24 +1,25 @@
 <div class="container">
+    {{correctMoth.name}}
 
     <form class="form" action="/" method="post">
         <!--when form is submit the "name" att will be the key and "value" will be the value-->
         <img src={{moths.image}} alt="moth">
         <!--moth 1-->
-        <input type="radio" name="moths" value="{{moths.id}}">
+        <input type="radio" name="moths" value="{{correctMoth.id}}">
         <label for='{{moths.id}}'>{{moths.name}}</label><br>
         <!--moth 2-->
         <input type="radio" name="moths" value='moth2'>
-        <label for='moth2'>{{moths.name}}</label><br>
+        <label for='moth2'>Multi Moth</label><br>
         <!--moth 3-->
         <input type="radio" name="moths" value='moth3'>
-        <label for='moth3'>{{moths.name}}</label>
+        <label for='moth3'>Mariano Moth</label>
         <!--moth 4-->
         <input type="radio" name="moths" value='moth4'>
-        <label for='moth4'>{{moths.name}}</label>
+        <label for='moth4'>Peter Moth</label>
         <!--this is the real answer-->
-        <input type="hidden" name="correctAnswer" value="{{moths.id}}">
+        <input type="hidden" name="correctAnswer" value="{{correctMoth.id}}">
 
-        <input type="submit" name="" value="Submit">
+        <input type="submit" value="Submit">
 
     </form>
 

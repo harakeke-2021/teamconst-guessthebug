@@ -12,9 +12,15 @@ router.use(express.urlencoded({
   extended: false
 }))
 
+router.post('/', (req, res) => {
+  console.log(req.body)
+})
+
 
 router.get('/', (req, res) => {
-  res.render('home')
+  const viewData = utils.exampleData()
+  console.log(viewData)
+  res.render('home', viewData)
 })
 
 router.post('/', (req, res) => {

@@ -1,5 +1,5 @@
 const bugs = require('./bugs.json')
-const { mountpath } = require('./server')
+// const { mountpath } = require('./server')
 
 function generateWrongAnswers(correctMothId) {
   const randomIds = []
@@ -16,4 +16,17 @@ function generateWrongAnswers(correctMothId) {
   return mothArray
 }
 
-generateWrongAnswers(1)
+function exampleData() {
+  const correctMoth = bugs.moths[0]
+  const incorrectAnswer = generateWrongAnswers(1)
+  const viewData = {}
+  viewData.correctMoth = correctMoth
+  viewData.incorectMoths = incorrectAnswer
+  return viewData
+}
+
+
+module.exports = {
+  generateWrongAnswers,
+  exampleData
+}
