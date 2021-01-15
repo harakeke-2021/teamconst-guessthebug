@@ -1,6 +1,11 @@
 const bugs = require('./bugs.json')
 // const { mountpath } = require('./server')
 
+function getMoth(id) {
+  const moth = bugs.moths.find((moth) => moth.id === id)
+  return moth
+}
+
 function generateWrongAnswers(correctMothId) {
   const randomIds = []
   const numberOfBugs = 12
@@ -40,5 +45,6 @@ function getData() {
 module.exports = {
   generateWrongAnswers,
   exampleData,
-  getData
+  getData,
+  getMoth
 }
