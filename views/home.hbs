@@ -1,20 +1,22 @@
 <div class="container">
-    {{correctMoth.name}}
+
 
     <form class="form" action="/" method="post">
         <!--when form is submit the "name" att will be the key and "value" will be the value-->
-        <img src={{moths.image}} alt="moth">
-        <!--moth 1-->
+        <div class="bug-image">
+            <img src={{correctMoth.image}} alt="moth">
+        </div>
+        <!--correct moth-->
         <input type="radio" name="userSelection" value="{{correctMoth.id}}">
-        <label for='{{moths.id}}'>{{moths.name}}</label><br>
-        <!--moth 2-->
-        {{#each incorrectMoth}}
-        <div class="incorrectMothList">
-            <input type="radio" name="userSelection" value="{{incorrectMoth.id}}">
-            <label for='{{moths.id}}'>{{moths.name}}</label><br>
+        <label for='{{correctmoth.id}}'>{{correctMoth.name}}</label><br>
+        <!--incorrect moth-->
+        {{#each incorectMoths}}
+        <div class="incorectMoths">
+            <input type="radio" name="userSelection" value={{id}}>
+            <label for={{id}}>{{name}}</label><br>
         </div>
         {{/each}}
-        <!--this is the real answer--> --}}
+        <!--this is the real answer-->
         <input type="hidden" name="correctAnswer" value="{{correctMoth.id}}">
 
         <input type="submit" value="Submit">
