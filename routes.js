@@ -14,8 +14,9 @@ router.use(express.urlencoded({
 
 router.post('/', (req, res) => {
   const theMoth = req.body
+  console.log(theMoth)
   const correctAnswer = theMoth.correctAnswer
-  if (correctAnswer === theMoth.moths){
+  if (correctAnswer === theMoth.userSelection){
     //const strMoth = JSON.stringify(theMoth)
     console.log('correct moth')
     res.render('correct', theMoth)
