@@ -29,7 +29,7 @@ router.post('/', (req, res) => {
 
 
 router.get('/', (req, res) => {
-  const viewData = utils.exampleData()
+  const viewData = utils.getData()
   console.log(viewData)
   res.render('home', viewData)
 })

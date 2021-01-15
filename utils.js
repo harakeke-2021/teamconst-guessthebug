@@ -25,8 +25,20 @@ function exampleData() {
   return viewData
 }
 
+function getData() {
+  const numberOfBugs = 12
+  const randIndex = Math.floor(Math.random() * numberOfBugs)
+  const correctMoth = bugs.moths[randIndex]
+  const incorrectAnswer = generateWrongAnswers(randIndex + 1)
+  const viewData = {}
+  viewData.correctMoth = correctMoth
+  viewData.incorectMoths = incorrectAnswer
+  return viewData
+}
+
 
 module.exports = {
   generateWrongAnswers,
-  exampleData
+  exampleData,
+  getData
 }
